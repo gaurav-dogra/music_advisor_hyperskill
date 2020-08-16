@@ -12,6 +12,8 @@ public abstract class SpotifyPlayerAction {
                 return new FetchCategories();
             case "playlists mood":
                 return new FetchMoodPlaylist();
+            case "auth":
+                return new Auth();
             default:
                 throw new SpotifyException();
         }
